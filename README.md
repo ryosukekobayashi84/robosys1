@@ -4,6 +4,7 @@
 ## 概要 
 入力する値（0,1）によってLEDが点灯、消灯するプログラムを上田先生のプログラムを元にＣ言語で実装しました。
 ## 動画  
+実際の作動例  
 <https://youtu.be/HB9kV_G23-o>
 ## 使用するもの
   -Raspberry Pi 4  
@@ -26,5 +27,8 @@
  後始末  
  `$ sudo rm /dev/myled0`  
  `$ sudo rmmod myled`  
- ##LICENCE  
+ ## LICENCE  
+ GNU General Public License v3.0  
+ 
+ 
  

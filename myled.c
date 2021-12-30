@@ -1,3 +1,11 @@
+// SPDX-License-Identifier: GPL-3.0
+// /*
+//  * Copyright (C) 2021 Ryuichi Ueda.  All rights reserved.
+//   */
+
+
+
+
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/cdev.h>
@@ -5,7 +13,7 @@
 #include <linux/uaccess.h>
 #include <linux/io.h>
 
-MODULE_AUTHOR("Ryuichi Ueda & Kobayashi Ryousuke");
+MODULE_AUTHOR("Ryuichi Ueda");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.1.1");

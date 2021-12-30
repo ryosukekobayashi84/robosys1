@@ -73,14 +73,14 @@ static int __init init_mod(void)
 		          return retval;
 	}
 
-	cls = class_create(THIS_MODULE,"myled");
-	if(IS_ERR(cls)){
-	               printk(KERN_ERR "class_create failed.");
-		       return PTR_ERR(cls);
+	        cls = class_create(THIS_MODULE,"myled");
+	        if(IS_ERR(cls)){
+	                  printk(KERN_ERR "class_create failed.");
+		          return PTR_ERR(cls);
 									}
-        device_create(cls, NULL, dev, NULL, "myled%d",MINOR(dev));
+                device_create(cls, NULL, dev, NULL, "myled%d",MINOR(dev));
 
-        return 0;
+                return 0;
  }
 
 static void __exit cleanup_mod(void)
